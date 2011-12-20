@@ -7,7 +7,7 @@
 Summary:	Redis - Perl binding for Redis database
 Name:		perl-Redis
 Version:	1.904
-Release:	1
+Release:	2
 # note if it is "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -24,6 +24,9 @@ BuildRequires:	perl-Test-Simple >= 0.96
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# Tie::StdHash is present in Tie/Hash.pm package
+%define		_noautoreq	perl(Tie::StdHash)
 
 %description
 Pure Perl bindings for <http://redis.io/>
