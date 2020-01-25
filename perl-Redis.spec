@@ -3,7 +3,6 @@
 %bcond_without	tests		# do not perform "make test"
 
 %define		pdir	Redis
-%include	/usr/lib/rpm/macros.perl
 Summary:	Redis - Perl binding for Redis database
 Name:		perl-Redis
 Version:	1.904
