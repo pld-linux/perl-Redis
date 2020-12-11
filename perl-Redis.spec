@@ -5,17 +5,18 @@
 %define		pdir	Redis
 Summary:	Redis - Perl binding for Redis database
 Name:		perl-Redis
-Version:	1.904
-Release:	2
+Version:	1.998
+Release:	1
 # note if it is "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Redis/%{pdir}-%{version}.tar.gz
-# Source0-md5:	1c023390a5de0187a208ead7ade3d0a6
+# Source0-md5:	187d464968fdca58eec675856a8cd0fe
 URL:		http://search.cpan.org/dist/Redis/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-IO-Socket-Timeout
 BuildRequires:	perl-IO-String
 BuildRequires:	perl-Test-Deep
 BuildRequires:	perl-Test-Exception
