@@ -6,7 +6,7 @@
 Summary:	Redis - Perl binding for Redis database
 Name:		perl-Redis
 Version:	1.998
-Release:	2
+Release:	3
 # note if it is "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
