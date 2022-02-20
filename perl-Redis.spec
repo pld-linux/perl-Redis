@@ -13,6 +13,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Redis/%{pdir}-%{version}.tar.gz
 # Source0-md5:	187d464968fdca58eec675856a8cd0fe
 URL:		http://search.cpan.org/dist/Redis/
+BuildRequires:	perl-Module-Build-Tiny >= 0.034
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
